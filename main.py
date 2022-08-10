@@ -24,3 +24,7 @@ def Downloader():
     video = url.streas.first()
     video.download()
     Label(root, text='DOWNLOAD COMPLETE', font= 'arial 15').place(x = 180, y = 210)
+
+Button(root,text = 'DOWNLOAD', font= 'arial 15 bold', bg = 'pale violet red', padx = 2, command = Downloader).place(x = 180 , y = 150)
+
+root.mainloop()
