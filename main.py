@@ -21,7 +21,7 @@ link_enter = Entry(root, width = 70, textvariable = link).place(x =32, y = 90)
 #creating a function to start downloading
 def Downloader():
     url = YouTube(str(link.get()))
-    video = url.stream.first()
+    video = url.streams.first()
     video.download()
     Label(root, text='DOWNLOAD COMPLETE', font= 'arial 15').place(x = 180, y = 210)
 
