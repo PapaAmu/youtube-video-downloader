@@ -8,3 +8,5 @@ root.geometry('500x300')
 root.resizable(0,0)
 root.title("Lukhele's - youtube downloader")
 
+Label(root,text= 'Youtube Video Downloader', font='arial 20 bold').pack()
+
